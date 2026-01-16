@@ -29,6 +29,10 @@
     "supabase-integration": {
       "usageCount": 1,
       "lastUsedAt": 1768580052474
+    },
+    "resend-integration": {
+      "usageCount": 1,
+      "lastUsedAt": 1768580153982
     }
   }
 }
