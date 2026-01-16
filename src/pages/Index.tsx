@@ -5,6 +5,7 @@ import { StatusDisplay } from '../components/StatusDisplay';
 import { EmergencyContactList } from '../components/EmergencyContactList';
 import { CheckInHistory } from '../components/CheckInHistory';
 import { AuthForm } from '../components/AuthForm';
+import { QuickEmailTest } from '../components/QuickEmailTest';
 import { Shield, LogOut, Loader2 } from 'lucide-react';
 import { Toaster, toast } from 'sonner';
 
@@ -91,7 +92,13 @@ const Index = () => {
                 <Loader2 className="w-8 h-8 animate-spin text-primary" />
               </div>
             ) : !isAuthenticated ? (
-              <AuthForm />
+              <div className="flex flex-col gap-8 w-full items-center">
+                <QuickEmailTest />
+                <div className="text-center text-muted-foreground text-sm">
+                  <span>或者</span>
+                </div>
+                <AuthForm />
+              </div>
             ) : (
               <>
                 {/* Check-in button */}
